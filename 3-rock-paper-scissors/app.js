@@ -26,7 +26,7 @@ function startGame(event) {
   // const result = playerWins ? "GANASTE" : "PERDISTE";
 
   //   if (playerWins === true) {
-  //     result.textContent = "GANASE";
+  //     result.textContent = "GANASTE";
   //   } else if (!playerWins) {
   //     result.textContent = "PERDISTE";
   //   } else if (playerWins === "draw") {
