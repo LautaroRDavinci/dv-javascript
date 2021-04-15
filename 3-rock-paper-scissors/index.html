@@ -4,32 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Rock, Paper or Scissors</title>
   </head>
   <body>
-    <div class="wrapper">
-      <section id="computer-zone">
-        <img id="computerChoice" src="imgs/paper.png" alt="paper" />
-      </section>
+    <div class="wrapper-container">
+      <div class="wrapper">
+        <!-- Seleccion de PC -->
+        <section id="computer-zone">
+          <img id="computerChoice" src="imgs/paper.png" alt="paper" />
+        </section>
 
-      <!-- <p id="result">PERDISTE</p> -->
+        <!-- Contador de Player y PC -->
+        <p id="num-counter">0 - 0</p>
 
-      <!-- TAREA -->
-      <p id="result">
-        You won/lost/draw with ${playerChoice} against ${computerChoice}
-      </p>
-      <p id="counter">You won N times. You lost N times</p>
+        <!-- Seleccion de Player -->
+        <section id="player-zone">
+          <img id="playerChoice" src="imgs/rock.png" alt="rock" />
+        </section>
+      </div>
 
-      <!-- Y SI SE ANIMAN -->
-      <p id="counter">0 - 0</p>
-      <!-- EL PRIMERO QUE LLEGA A 3 ES EL GANADOR -->
+      <!-- Resultado de cada partida -->
+      <div class="result-container">
+        <p id="result"></p>
+        <p id="counter"></p>
+      </div>
 
-      <section id="player-zone">
-        <img id="playerChoice" src="imgs/rock.png" alt="rock" />
-      </section>
 
-      <section>
+      <!-- Buttons Rock, Paper, Scissors -->
+      <section class="button-container">
         <button data-choice="rock">
           <img src="imgs/rock.png" alt="rock" />
         </button>
@@ -40,6 +48,11 @@
           <img src="imgs/scissors.png" alt="scissors" />
         </button>
       </section>
+
+      <!-- Mensaje de Resultado final -->
+      <div class="final-result">
+        <p id="final-result"></p>
+      </div>
     </div>
 
     <script src="app.js"></script>
