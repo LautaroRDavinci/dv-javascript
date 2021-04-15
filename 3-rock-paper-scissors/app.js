@@ -19,7 +19,7 @@ function startGame(event) {
   //const playerWins = isPlayerWinner(playerChoice, computerChoice);
   const winner = setWinner(playerChoice, computerChoice);
 
-  // Mostrar resultado
+  // Mostrar resultad
   playerChoiceElement.setAttribute("src", `imgs/${playerChoice}.png`);
   computerChoiceElement.setAttribute("src", `imgs/${computerChoice}.png`);
 
