@@ -12,7 +12,7 @@ function startGame(event) {
   const button = event.currentTarget;
   const playerChoice = button.dataset.choice;
 
-  // Obtener elección de la computadora
+  // Obtener elección de la computador
   const computerChoice = getComputerChoice();
 
   // Calcular ganador
